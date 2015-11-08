@@ -85,7 +85,7 @@ public class TvGridFragment extends android.support.v17.leanback.app.VerticalGri
     }
 
     private void playVideo(PutioFile file) {
-        TvPlaybackOverlayActivity.launch(getActivity(), file);
+        TvPlaybackActivity.launch(getActivity(), file);
     }
 
     private void loadFiles() {

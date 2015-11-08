@@ -29,8 +29,8 @@ import com.stevenschoen.putionew.model.files.PutioFile;
 /**
  * PlaybackOverlayActivity for video playback that loads PlaybackOverlayFragment
  */
-public class TvPlaybackOverlayActivity extends Activity implements
-        TvPlaybackOverlayFragment.OnPlayPauseClickedListener {
+public class TvOldPlaybackActivity extends Activity implements
+        TvOldPlaybackOverlayFragment.OnPlayPauseClickedListener {
 
     public static final String ARG_FILE = "ARG_FILE";
 
@@ -44,7 +44,7 @@ public class TvPlaybackOverlayActivity extends Activity implements
     private PutioFile mFile;
 
     public static void launch(Activity activity, PutioFile file) {
-        Intent intent = new Intent(activity, TvPlaybackOverlayActivity.class);
+        Intent intent = new Intent(activity, TvPlaybackActivity.class);
         intent.putExtra(ARG_FILE, file);
         activity.startActivity(intent);
     }

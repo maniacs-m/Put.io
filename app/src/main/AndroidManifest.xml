@@ -217,7 +217,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tv.TvPlaybackOverlayActivity"
+            android:name=".tv.TvPlaybackActivity"
             android:label="@string/putio"
             android:theme="@style/Theme.Leanback" />
     </application>
